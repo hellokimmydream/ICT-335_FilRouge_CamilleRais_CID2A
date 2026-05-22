@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:c335_fil_rouge_CamilleRais.Models"
+             x:Class="c335_fil_rouge_CamilleRais.Decks"
+             Title="Mes Decks">
+
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="20" RowSpacing="15">
+
+        <!-- Titre -->
+        <Label Grid.Row="0"
+               Text="Mes paquets de cartes"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <!-- Zone ajout rapide -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="10">
+            <Entry x:Name="NewDeckEntry"
+                   Grid.Column="0"
+                   Placeholder="Nom du nouveau deck..." />
+            <Button Grid.Column="1"
+                    Text="Ajouter"
+                    Clicked="OnAddDeckClicked"
+                    BackgroundColor="DarkMagenta"/>
+
+        </Grid>
+
+        <!-- liste decks -->
+        <CollectionView Grid.Row="3"
+                        x:Name="DecksCollectionView"
+                        EmptyView="Aucun deck pour le moment!">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Deck">
+                    <Border Stroke="LightGray"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="15"
+                            Margin="0,5">
+                        <Grid ColumnDefinitions="*,Auto,Auto,Auto,Auto,Auto" ColumnSpacing="10">
+
+                            <!-- info deck -->
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="{Binding Name}"
+                                   FontSize="18"
+                                   FontAttributes="Bold" />
+                                <Label Text="{Binding CardCount, StringFormat='Quizz fait {0} fois'}"
+                                   FontSize="14"
+                                   TextColor="Gray" />
+                            </VerticalStackLayout>
+
+                            <Button Grid.Column="2"
+                            Text="📖"
+                            BackgroundColor="CadetBlue"
+                            Clicked="OnLearnDeckClicked"
+                            CommandParameter="{Binding .}" />
+
+                            <!-- btn Gérer les cartes-->
+                        <Button Grid.Column="3"
+                            Text="➕"
+                            BackgroundColor="MediumPurple"
+                            TextColor="White"
+                            Clicked="OnManageCardsClicked"
+                            CommandParameter="{Binding .}" />
+
+                        <!-- btn modifier -->
+                        <Button Grid.Column="4"
+                            Text="✏️"
+                            BackgroundColor="CornflowerBlue"
+                            TextColor="White"
+                            Clicked="OnEditDeckClicked"
+                            CommandParameter="{Binding .}" />
+
+                        <!-- btn Supprimer -->
+                        <Button Grid.Column="5"
+                            Text="🗑️"
+                            BackgroundColor="IndianRed"
+                            TextColor="White"
+                            Clicked="OnDeleteDeckClicked"
+                            CommandParameter="{Binding .}" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- info en bas --><!--
+        <Label Grid.Row="3"
+               x:Name="InfoLabel"
+               FontSize="12"
+               TextColor="Gray"
+               HorizontalOptions="Center" />-->
+    </Grid>
+</ContentPage>

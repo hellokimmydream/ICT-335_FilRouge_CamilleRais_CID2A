@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c335_fil_rouge_CamilleRais.StudyPage"
+             Title="Mode d'apprentissage">
+
+    <Grid RowDefinitions="Auto,*,Auto" Padding="20" RowSpacing="20">
+
+        <!-- title avec compteur -->
+        <VerticalStackLayout Grid.Row="0" Spacing="5">
+            <Label x:Name="DeckNameLabel"
+                   Text="Nom du deck"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+            <Label x:Name="ProgressLabel"
+                   Text="Restantes : 0 | Connues : 0"
+                   FontSize="13"
+                   TextColor="Gray"
+                   HorizontalOptions="Center" />
+            <Label x:Name="ShakeHintLabel"
+                   Text="Pas la réponse? Secouez!"
+                   FontSize="12"
+                   TextColor="Purple"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <!-- la flashcard -->
+        <Grid Grid.Row="1"
+              WidthRequest="300"
+              HeightRequest="220"
+              HorizontalOptions="Center"
+              VerticalOptions="Center">
+
+            <!-- face question -->
+            <Frame x:Name="FrontFace"
+                   BackgroundColor="DarkMagenta"
+                   BorderColor="Transparent"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="20">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFlipTapped"/>
+                </Frame.GestureRecognizers>
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Label Text="QUESTION"
+                           TextColor="White"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Opacity="0.7"
+                           Margin="0,0,0,10"/>
+                    <Label x:Name="QuestionLabel"
+                           Text="..."
+                           TextColor="White"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- face réponse -->
+            <Frame x:Name="BackFace"
+                   BackgroundColor="CadetBlue"
+                   BorderColor="Transparent"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="20"
+                   IsVisible="False">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFlipTapped"/>
+                </Frame.GestureRecognizers>
+                <VerticalStackLayout VerticalOptions="Center">
+                    <Label Text="RÉPONSE"
+                           TextColor="White"
+                           FontSize="12"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Opacity="0.7"
+                           Margin="0,0,0,10"/>
+                    <Label x:Name="AnswerLabel"
+                           Text="..."
+                           TextColor="White"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"/>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+
+        <!-- btn action -->
+        <VerticalStackLayout Grid.Row="2" Spacing="10">
+            <Label Text="Tapez sur la carte pour voir la réponse"
+                   FontSize="13"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"/>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                <Button Grid.Column="0"
+                        x:Name="KnowButton"
+                        Text="Je sais"
+                        BackgroundColor="CadetBlue"
+                        TextColor="White"
+                        Clicked="OnKnowClicked"/>
+                <Button Grid.Column="1"
+                        x:Name="StopButton"
+                        Text="Stop"
+                        BackgroundColor="IndianRed"
+                        TextColor="White"
+                        Clicked="OnStopClicked"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

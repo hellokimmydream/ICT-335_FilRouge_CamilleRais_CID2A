@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = c335_fil_rouge_CamilleRais
+build_property.ProjectDir = C:\Users\pr53sjy\Documents\MAUI_CamilleRais\c335_fil-rouge_CamilleRais\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/Accueil.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.Accueil.xaml
+build_metadata.AdditionalFiles.TargetPath = Accueil.xaml
+build_metadata.AdditionalFiles.RelativePath = Accueil.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/Apropos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.Apropos.xaml
+build_metadata.AdditionalFiles.TargetPath = Apropos.xaml
+build_metadata.AdditionalFiles.RelativePath = Apropos.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/Decks.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.Decks.xaml
+build_metadata.AdditionalFiles.TargetPath = Decks.xaml
+build_metadata.AdditionalFiles.RelativePath = Decks.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/DetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.DetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DetailPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/EditDeckPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.EditDeckPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditDeckPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditDeckPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/ManageCardsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.ManageCardsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ManageCardsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ManageCardsPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SettingsPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/StudyPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.StudyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = StudyPage.xaml
+build_metadata.AdditionalFiles.RelativePath = StudyPage.xaml
+
+[C:/Users/pr53sjy/Documents/MAUI_CamilleRais/c335_fil-rouge_CamilleRais/StudySummaryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = c335_fil_rouge_CamilleRais.StudySummaryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = StudySummaryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = StudySummaryPage.xaml

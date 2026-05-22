@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="c335_fil_rouge_CamilleRais.SettingsPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.PresentationMode="Modal"
+             Title="Paramètres">
+    <StackLayout Padding="20">
+        <Label Text="Paramètres de l'application"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+        <Switch x:Name="NotificationSwitch" />
+        <Label Text="Notifications activées" />
+
+        <Button Text="Sauvegarder et fermer"
+                Clicked="OnSauvegarderClicked"
+                BackgroundColor="Green"
+                TextColor="White" />
+
+        <Button Text="Annuler"
+                Clicked="OnAnnulerClicked"
+                BackgroundColor="Red"
+                TextColor="White" />
+    </StackLayout>
+</ContentPage>

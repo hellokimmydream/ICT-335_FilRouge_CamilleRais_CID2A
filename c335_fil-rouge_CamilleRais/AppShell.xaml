@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="c335_fil_rouge_CamilleRais.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:c335_fil_rouge_CamilleRais"
+    Shell.FlyoutBehavior="Flyout"
+    Title="c335_fil_rouge_CamilleRais">
+
+    <!-- Menu latéral flyout avec tous les onglets, menu burger -->
+    <FlyoutItem Title="Menu" FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent Title="Accueil"
+                      ContentTemplate="{DataTemplate local:Accueil}"
+                      Route="accueil" />
+
+        <ShellContent Title="Decks"
+                      ContentTemplate="{DataTemplate local:Decks}"
+                      Route="decks" />
+
+        <!--<ShellContent Title="Profil"
+                      ContentTemplate="{DataTemplate local:ProfilePage}"
+                      Route="profile" />
+
+        <ShellContent Title="À propos"
+                      ContentTemplate="{DataTemplate local:Apropos}"
+                      Route="apropos" />-->
+
+    </FlyoutItem>
+
+</Shell>

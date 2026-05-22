@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:c335_fil_rouge_CamilleRais.Models"
+             x:Class="c335_fil_rouge_CamilleRais.ManageCardsPage"
+             Title="Gérer les cartes">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="20" RowSpacing="15">
+
+        <!-- Titre -->
+        <Label Grid.Row="0"
+               x:Name="DeckNameLabel"
+               Text="Cartes du deck"
+               FontSize="22"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+        <!-- zone ajout -->
+        <VerticalStackLayout Grid.Row="1" Spacing="10">
+            <Label Text="Ajouter une nouvelle carte"
+                   FontSize="16"
+                   FontAttributes="Bold"/>
+            <Entry x:Name="NewQuestionEntry"
+                   Placeholder="Question..."/>
+            <Entry x:Name="NewAnswerEntry"
+                   Placeholder="Réponse..."/>
+            <Button Text="➕ Ajouter la carte"
+                    BackgroundColor="DarkMagenta"
+                    TextColor="White"
+                    Clicked="OnAddCardClicked"/>
+        </VerticalStackLayout>
+
+        <!-- separateur -->
+        <BoxView Grid.Row="2" HeightRequest="1" Color="LightGray" Margin="0,10,0,5"/>
+
+        <!-- liste cartes existantes -->
+        <CollectionView Grid.Row="3"
+                        x:Name="CardsCollectionView"
+                        EmptyView="Aucune carte. Ajoute-en une !">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Card">
+                    <Border Stroke="LightGray"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="12"
+                            Margin="0,5">
+                        <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+
+                            <!-- Q et R de la carte -->
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="{Binding Question, StringFormat='Q: {0}'}"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding Answer, StringFormat='R: {0}'}"
+                                       TextColor="Gray"/>
+                            </VerticalStackLayout>
+
+                            <!-- btn Modifier -->
+                            <Button Grid.Column="1"
+                                    Text="✏️"
+                                    BackgroundColor="CornflowerBlue"
+                                    TextColor="White"
+                                    Clicked="OnEditCardClicked"
+                                    CommandParameter="{Binding .}" />
+
+                            <!-- btn Supprimer -->
+                            <Button Grid.Column="2"
+                                    Text="🗑️"
+                                    BackgroundColor="IndianRed"
+                                    TextColor="White"
+                                    Clicked="OnDeleteCardClicked"
+                                    CommandParameter="{Binding .}"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

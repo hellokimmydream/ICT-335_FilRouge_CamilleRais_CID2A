@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:c335_fil_rouge_CamilleRais.Models"
+             x:Class="c335_fil_rouge_CamilleRais.Accueil"
+             Title="Accueil">
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="20" RowSpacing="15">
+        <!-- Titre -->
+        <Label Grid.Row="0"
+               Text="Bienvenue dans FlashCard"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+        <!-- Ss titre -->
+        <Label Grid.Row="1"
+               Text="Cliquer sur un deck pour voir les cartes"
+               FontSize="14"
+               TextColor="Gray"
+               HorizontalOptions="Center"/>
+        <!-- liste deck -->
+        <CollectionView Grid.Row="2"
+                        x:Name="DecksCollectionView"
+                        EmptyView="Aucun deck disponible">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Deck">
+                    <Border Stroke="MediumPurple"
+                            StrokeThickness="2"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="20"
+                            Margin="0,5"
+                            BackgroundColor="#F5F0FF">
+                        <!-- tap sur un deck ouvre card -->
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDeckTapped"
+                                                  CommandParameter="{Binding .}" />
+                        </Border.GestureRecognizers>
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                            <VerticalStackLayout Grid.Column="0">
+                                <Label Text="{Binding Name}"
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       TextColor="MediumPurple" />
+                                <Label Text="{Binding CardCount, StringFormat='{0} cartes'}"
+                                       FontSize="14"
+                                       TextColor="Gray" />
+                            </VerticalStackLayout>
+                            <Label Grid.Column="1"
+                                   Text=""
+                                   FontSize="28"
+                                   VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <!-- zone d'ajout d'un deck, tout en bas -->
+        <Grid Grid.Row="3" ColumnDefinitions="*,Auto" ColumnSpacing="10">
+            <Entry x:Name="NewDeckEntry"
+                   Grid.Column="0"
+                   Placeholder="Nom du nouveau deck..." />
+            <Button Grid.Column="1"
+                    Text="Ajouter"
+                    Clicked="OnAddDeckClicked"
+                    BackgroundColor="DarkMagenta"/>
+        </Grid>
+    </Grid>
+</ContentPage>

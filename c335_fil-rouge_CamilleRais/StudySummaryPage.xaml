@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="c335_fil_rouge_CamilleRais.StudySummaryPage"
+             Title="Résumé">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label Text="Session terminée"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Frame BorderColor="MediumPurple"
+                   CornerRadius="15"
+                   Padding="20"
+                   HasShadow="True">
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- temps passé -->
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Temps passé"
+                               FontSize="14"
+                               TextColor="Gray"/>
+                        <Label x:Name="TimeLabel"
+                               Text="0:00"
+                               FontSize="20"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <!-- carte la plus dure -->
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Carte la plus dure"
+                               FontSize="14"
+                               TextColor="Gray"/>
+                        <Label x:Name="HardestCardLabel"
+                               Text="-"
+                               FontSize="16"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <!-- cartes connue 100% -->
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Cartes connues à 100%"
+                               FontSize="14"
+                               TextColor="Gray"/>
+                        <Label x:Name="KnownLabel"
+                               Text="0 / 0"
+                               FontSize="20"
+                               FontAttributes="Bold"/>
+                    </VerticalStackLayout>
+
+                    <!-- % pour la memoire -->
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="Mémorisation"
+                               FontSize="14"
+                               TextColor="Gray"/>
+                        <Label x:Name="PercentLabel"
+                               Text="0 %"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="LightSeaGreen"/>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Retour aux decks"
+                    BackgroundColor="DarkMagenta"
+                    TextColor="White"
+                    Clicked="OnBackClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
