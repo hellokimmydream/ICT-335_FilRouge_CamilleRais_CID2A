@@ -1,4 +1,21 @@
-﻿namespace c335_fil_rouge_CamilleRais
+﻿/******************************************************************************
+** PROGRAMME  AppShell.xaml.cs                                               **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Gère la navigation de l'app.                                              **
+** Enregistre les routes vers les différentes pages.                         **
+**                                                                           **
+******************************************************************************/
+
+namespace c335_fil_rouge_CamilleRais
 {
     public partial class AppShell : Shell
     {

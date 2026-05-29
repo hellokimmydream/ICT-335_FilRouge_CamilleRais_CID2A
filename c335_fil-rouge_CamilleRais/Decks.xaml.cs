@@ -1,4 +1,22 @@
-﻿using c335_fil_rouge_CamilleRais.Models;
+﻿/******************************************************************************
+** PROGRAMME  Decks.xaml.cs                                                  **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Page qui liste tous mes decks.                                            **
+** Permet d'ajouter, modifier, supprimer un deck : CRUD.                     **
+** Donne aussi accès à la gestion des cartes et au mode étudier.             **
+**                                                                           **
+******************************************************************************/
+
+using c335_fil_rouge_CamilleRais.Models;
 using c335_fil_rouge_CamilleRais.Services;
 using System.Collections.ObjectModel;
 
@@ -10,6 +28,9 @@ namespace c335_fil_rouge_CamilleRais
         private ObservableCollection<Deck> _decks;
         private int _nextId = 1;
 
+        /// <summary>
+        /// constructeur de la page
+        /// </summary>
         public Decks()
         {
             InitializeComponent();
@@ -19,13 +40,18 @@ namespace c335_fil_rouge_CamilleRais
             LoadDecks();
         }
 
-        // Recharge decks depuis JSON à chaque retour sur la page
+        /// <summary>
+        /// Recharge decks depuis JSON à chaque retour sur la page
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();
             LoadDecks();
         }
 
+        /// <summary>
+        /// charge la liste des decks depuis le JSON
+        /// </summary>
         private async void LoadDecks()
         {
             List<Deck> loadedDecks = await _dataService.LoadDecksAsync();
@@ -45,17 +71,14 @@ namespace c335_fil_rouge_CamilleRais
             {
                 _nextId = 1;
             }
-
-            //UpdateInfo($"{_decks.Count} deck(s) chargé(s)");
         }
 
-        //private void UpdateInfo(string message)
-        //{
-        //    InfoLabel.Text = $"{DateTime.Now:HH:mm:ss} - {message}";
-        //}
-
-        // CREATE rapide depuis entry
-        private async void OnAddDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// CREATE rapide depuis entry
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnAddDeckClicked(object sender, EventArgs eventDeck)
         {
             string? name = NewDeckEntry.Text?.Trim();
 
@@ -76,11 +99,14 @@ namespace c335_fil_rouge_CamilleRais
             await _dataService.SaveDecksAsync(_decks.ToList());
 
             NewDeckEntry.Text = string.Empty;
-            //UpdateInfo($"Ajouté : {name}");
         }
 
-        // UPDATE : navvers page de détail
-        private async void OnEditDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// UPDATE : navvers page de détail
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnEditDeckClicked(object sender, EventArgs eventDeck)
         {
             Button? button = sender as Button;
             Deck? deck = button?.CommandParameter as Deck;
@@ -96,8 +122,12 @@ namespace c335_fil_rouge_CamilleRais
             await Shell.Current.GoToAsync("EditDeck", navigationParameter);
         }
 
-        // DELETE
-        private async void OnDeleteDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// DELETE
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnDeleteDeckClicked(object sender, EventArgs eventDeck)
         {
             Button? button = sender as Button;
             Deck? deck = button?.CommandParameter as Deck;
@@ -115,12 +145,14 @@ namespace c335_fil_rouge_CamilleRais
 
             _decks.Remove(deck);
             await _dataService.SaveDecksAsync(_decks.ToList());
-
-            //UpdateInfo($"Supprimé : {deck.Name}");
         }
 
-        // naviguer vers la page pour étudier des cartes avec flip
-        private async void OnStudyDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// naviguer vers la page pour étudier des cartes avec flip
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnStudyDeckClicked(object sender, EventArgs eventDeck)
         {
             Button? button = sender as Button;
             Deck? deck = button?.CommandParameter as Deck;
@@ -136,8 +168,12 @@ namespace c335_fil_rouge_CamilleRais
             await Shell.Current.GoToAsync("detail", navigationParameter);
         }
 
-        // nav vers mode d'apprentissage avec secousse
-        private async void OnLearnDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// nav vers mode d'apprentissage avec secousse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnLearnDeckClicked(object sender, EventArgs eventDeck)
         {
             Button? button = sender as Button;
             Deck? deck = button?.CommandParameter as Deck;
@@ -152,15 +188,19 @@ namespace c335_fil_rouge_CamilleRais
             }
 
             Dictionary<string, object> navigationParameter = new Dictionary<string, object>
-    {
-        { "deck", deck }
-    };
+            {
+                { "deck", deck }
+            };
 
             await Shell.Current.GoToAsync("study", navigationParameter);
         }
 
-        // ouvre la page gestion des cartes
-        private async void OnManageCardsClicked(object sender, EventArgs e)
+        /// <summary>
+        /// ouvre la page gestion des cartes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventDeck"></param>
+        private async void OnManageCardsClicked(object sender, EventArgs eventDeck)
         {
             Button? button = sender as Button;
             Deck? deck = button?.CommandParameter as Deck;
@@ -168,10 +208,10 @@ namespace c335_fil_rouge_CamilleRais
             if (deck == null) return;
 
             Dictionary<string, object> navigationParameter = new Dictionary<string, object>
-    {
-        { "deck", deck },
-        { "decks", _decks }
-    };
+            {
+                { "deck", deck },
+                { "decks", _decks }
+            };
 
             await Shell.Current.GoToAsync("manageCards", navigationParameter);
         }

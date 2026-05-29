@@ -1,22 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\",
+  "WorkspaceRootPath": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudyPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\studysummarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:studysummarypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\Platforms\\Android\\MainApplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Platforms\\Android\\MainApplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\studypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:studypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\App.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudyPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\managecardspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:managecardspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\editdeckpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:editdeckpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\accueil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:accueil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\detailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:detailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\decks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:decks.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\apropos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:apropos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|c:\\users\\pr53sjy\\documents\\maui_camillerais\\c335_fil-rouge_camillerais\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C38F64-142C-4403-A66E-64E73E65094E}|c335_fil-rouge_CamilleRais.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +66,189 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainApplication.cs",
-              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\Platforms\\Android\\MainApplication.cs",
-              "RelativeDocumentMoniker": "Platforms\\Android\\MainApplication.cs",
-              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\Platforms\\Android\\MainApplication.cs",
-              "RelativeToolTip": "Platforms\\Android\\MainApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T08:31:56.553Z"
+              "DocumentIndex": 4,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "ProfilePage.xaml",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ProfilePage.xaml",
+              "RelativeToolTip": "ProfilePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-29T07:08:29.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABiAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ManageCardsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ManageCardsPage.xaml.cs",
+              "RelativeDocumentMoniker": "ManageCardsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ManageCardsPage.xaml.cs",
+              "RelativeToolTip": "ManageCardsPage.xaml.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAqwNkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T08:29:51.913Z"
+              "WhenOpened": "2026-05-29T06:31:08.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudyPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml.cs",
-              "RelativeDocumentMoniker": "StudyPage.xaml.cs",
-              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml.cs",
-              "RelativeToolTip": "StudyPage.xaml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAswFYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T08:27:17.383Z",
+              "WhenOpened": "2026-05-29T06:30:56.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditDeckPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\EditDeckPage.xaml.cs",
+              "RelativeDocumentMoniker": "EditDeckPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\EditDeckPage.xaml.cs",
+              "RelativeToolTip": "EditDeckPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:27:50.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\DetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "DetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\DetailPage.xaml.cs",
+              "RelativeToolTip": "DetailPage.xaml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAqwIUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:25:19.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Accueil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Accueil.xaml.cs",
+              "RelativeDocumentMoniker": "Accueil.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Accueil.xaml.cs",
+              "RelativeToolTip": "Accueil.xaml.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAQwFwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:13:19.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "StudyPage.xaml",
-              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml",
-              "RelativeDocumentMoniker": "StudyPage.xaml",
-              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\GitHub\\ICT-335_FilRouge_CamilleRais_CID2A\\c335_fil-rouge_CamilleRais\\StudyPage.xaml",
-              "RelativeToolTip": "StudyPage.xaml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T06:37:27.594Z"
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "ProfilePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:34:14.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SettingsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\SettingsPage.xaml.cs",
+              "RelativeDocumentMoniker": "SettingsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\SettingsPage.xaml.cs",
+              "RelativeToolTip": "SettingsPage.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:35:02.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\StudyPage.xaml.cs",
+              "RelativeDocumentMoniker": "StudyPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\StudyPage.xaml.cs",
+              "RelativeToolTip": "StudyPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:36:09.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudySummaryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\StudySummaryPage.xaml.cs",
+              "RelativeDocumentMoniker": "StudySummaryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\StudySummaryPage.xaml.cs",
+              "RelativeToolTip": "StudySummaryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:40:36.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Decks.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Decks.xaml.cs",
+              "RelativeDocumentMoniker": "Decks.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Decks.xaml.cs",
+              "RelativeToolTip": "Decks.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:18:10.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Apropos.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Apropos.xaml.cs",
+              "RelativeDocumentMoniker": "Apropos.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\Apropos.xaml.cs",
+              "RelativeToolTip": "Apropos.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:18:02.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:16:51.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\pr53sjy\\Documents\\MAUI_CamilleRais\\c335_fil-rouge_CamilleRais\\AppShell.xaml.cs",
+              "RelativeToolTip": "AppShell.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T06:17:28.731Z",
+              "EditorCaption": ""
             }
           ]
         }

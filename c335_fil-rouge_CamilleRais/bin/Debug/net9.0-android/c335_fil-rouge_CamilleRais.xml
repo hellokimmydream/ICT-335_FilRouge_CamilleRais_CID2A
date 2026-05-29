@@ -4,6 +4,288 @@
         <name>c335_fil-rouge_CamilleRais</name>
     </assembly>
     <members>
+        <member name="M:c335_fil_rouge_CamilleRais.Accueil.#ctor">
+            <summary>
+            constructeur de la page d'accueil
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Accueil.OnAppearing">
+            <summary>
+            Recharge la liste à chaque retour sur la page
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Accueil.LoadDecks">
+            <summary>
+            charge la liste des decks depuis le JSON
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Accueil.OnDeckTapped(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            tap sur un deck = ouvre direct la page etudier
+            </summary>
+            <param name="sender"></param>
+            <param name="eventTap"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Accueil.OnAddDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            CREATE rapide depuis entry
+            </summary>
+            <param name="sender"></param>
+            <param name="eventTap"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.App.#ctor">
+            <summary>
+            constructeur de l'app
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.#ctor">
+            <summary>
+            constructeur de la page
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnAppearing">
+            <summary>
+            Recharge decks depuis JSON à chaque retour sur la page
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.LoadDecks">
+            <summary>
+            charge la liste des decks depuis le JSON
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnAddDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            CREATE rapide depuis entry
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnEditDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            UPDATE : navvers page de détail
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnDeleteDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            DELETE
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnStudyDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            naviguer vers la page pour étudier des cartes avec flip
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnLearnDeckClicked(System.Object,System.EventArgs)">
+            <summary>
+            nav vers mode d'apprentissage avec secousse
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.Decks.OnManageCardsClicked(System.Object,System.EventArgs)">
+            <summary>
+            ouvre la page gestion des cartes
+            </summary>
+            <param name="sender"></param>
+            <param name="eventDeck"></param>
+        </member>
+        <member name="T:c335_fil_rouge_CamilleRais.DetailPage">
+            <summary>
+            page qui affiche les cartes d'un deck
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.DetailPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            recoit deck depuis Decks.xaml ou Accueil.xaml
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.DetailPage.ShowCurrentCard">
+            <summary>
+            affiche toujours la carte sur la face question
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.DetailPage.OnFlipTapped(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            FLIP tapez sur la carte pour voir l autre coté avec la réponse 
+            </summary>
+            <param name="sender"></param>
+            <param name="evenementFlip"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.DetailPage.OnPreviousClicked(System.Object,System.EventArgs)">
+            <summary>
+            btn précédent
+            </summary>
+            <param name="sender"></param>
+            <param name="evenementFlip"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.DetailPage.OnNextClicked(System.Object,System.EventArgs)">
+            <summary>
+            btn suivant
+            </summary>
+            <param name="sender"></param>
+            <param name="evenementFlip"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.EditDeckPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Receive navigation parameters
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.EditDeckPage.OnSaveClicked(System.Object,System.EventArgs)">
+            <summary>
+            sauvegarde le nouveau nom puis retour
+            </summary>
+            <param name="sender"></param>
+            <param name="eventEdit"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.EditDeckPage.OnCancelClicked(System.Object,System.EventArgs)">
+            <summary>
+            annule et retour
+            </summary>
+            <param name="sender"></param>
+            <param name="eventEdit"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.#ctor">
+            <summary>
+            constructeur de la page
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Réception des paramètres depuis Decks.xaml
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.OnAddCardClicked(System.Object,System.EventArgs)">
+            <summary>
+            CREATE add new cartes
+            </summary>
+            <param name="sender"></param>
+            <param name="eventManage"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.OnDeleteCardClicked(System.Object,System.EventArgs)">
+            <summary>
+            DELETE
+            </summary>
+            <param name="sender"></param>
+            <param name="eventManage"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.OnEditCardClicked(System.Object,System.EventArgs)">
+            <summary>
+            UPDATE
+            </summary>
+            <param name="sender"></param>
+            <param name="eventManage"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ManageCardsPage.SaveAsync">
+            <summary>
+            sauvegarde tout dans le JSON
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.ProfilePage.OnRetourClicked(System.Object,System.EventArgs)">
+            <summary>
+            bouton retour vers l'accueil
+            </summary>
+            <param name="sender"></param>
+            <param name="ecouterObject"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.SettingsPage.OnSauvegarderClicked(System.Object,System.EventArgs)">
+            <summary>
+            sauvegarde et retour
+            </summary>
+            <param name="sender"></param>
+            <param name="eventClick"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.SettingsPage.OnAnnulerClicked(System.Object,System.EventArgs)">
+            <summary>
+            annule et retour
+            </summary>
+            <param name="sender"></param>
+            <param name="eventClick"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            récupère le deck passé via la nav Shell
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.OnAppearing">
+            <summary>
+            accelerometre
+            active le capteur QUE quand on arrive sur la page et coupe quand on quitte
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.OnDisappearing">
+            <summary>
+            quand on quitte la page, coupe le capteur et le chrono
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.AccelerometerShakeDetected(System.Object,System.EventArgs)">
+            <summary>
+            observateur appelé par MAUI quand secousse est détectée
+            </summary>
+            <param name="sender"></param>
+            <param name="eventStudy"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.StartSession">
+            <summary>
+            logique pour la révision comme dans CDC
+            prépare une nouvelle session : mélange les cartes et démarre le chrono
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.ShowNextCard">
+            tire la carte du dessus du deck et l'affiche
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.UpdateProgressLabel">
+            <summary>
+            met à jour le compteur Restantes / Connues
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.MarkCurrentCardAsUnknown">
+            <summary>
+            l'utilisateur secoue le téléphone → carte non connue
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.OnStopClicked(System.Object,System.EventArgs)">
+            <summary>
+            bouton stop : on quitte et on va au résumé
+            </summary>
+            <param name="sender"></param>
+            <param name="eventStudy"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.EndSession">
+            <summary>
+            fin de la session : on calcule les stats et on navigue vers le résumé
+            </summary>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudyPage.OnFlipTapped(System.Object,Microsoft.Maui.Controls.TappedEventArgs)">
+            <summary>
+            flip
+            </summary>
+            <param name="sender"></param>
+            <param name="eventStudy"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudySummaryPage.ApplyQueryAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            récupère les stats envoyées par StudyPage
+            </summary>
+            <param name="query"></param>
+        </member>
+        <member name="M:c335_fil_rouge_CamilleRais.StudySummaryPage.OnBackClicked(System.Object,System.EventArgs)">
+            <summary>
+            btn retour : on revient à la liste des decks
+            </summary>
+            <param name="sender"></param>
+            <param name="eventBack"></param>
+        </member>
         <member name="T:c335_fil_rouge_CamilleRais.Resource">
             <summary>
             Android Resource Designer class.

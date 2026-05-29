@@ -1,3 +1,20 @@
+/******************************************************************************
+** PROGRAMME  ManageCardsPage.xaml.cs                                        **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Gère les cartes d'un deck : ajouter, modifier, supprimer.                 **
+** C'est la partie CRUD des cartes.                                          **
+**                                                                           **
+******************************************************************************/
+
 using c335_fil_rouge_CamilleRais.Models;
 using c335_fil_rouge_CamilleRais.Services;
 using System.Collections.ObjectModel;
@@ -21,6 +38,9 @@ namespace c335_fil_rouge_CamilleRais
         // pour donner des Id uniques aux nouvelles cartes
         private int _nextCardId = 1;
 
+        /// <summary>
+        /// constructeur de la page
+        /// </summary>
         public ManageCardsPage()
         {
             InitializeComponent();
@@ -29,7 +49,10 @@ namespace c335_fil_rouge_CamilleRais
             CardsCollectionView.ItemsSource = _cards;
         }
 
-        // Réception des paramètres depuis Decks.xaml
+        /// <summary>
+        /// Réception des paramètres depuis Decks.xaml
+        /// </summary>
+        /// <param name="query"></param>
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
             // recup le deck
@@ -64,8 +87,12 @@ namespace c335_fil_rouge_CamilleRais
             }
         }
 
-        // CREATE add new cartes
-        private async void OnAddCardClicked(object sender, EventArgs e)
+        /// <summary>
+        /// CREATE add new cartes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventManage"></param>
+        private async void OnAddCardClicked(object sender, EventArgs eventManage)
         {
             if (_deck == null) return;
 
@@ -99,8 +126,12 @@ namespace c335_fil_rouge_CamilleRais
             NewAnswerEntry.Text = string.Empty;
         }
 
-        // DELETE
-        private async void OnDeleteCardClicked(object sender, EventArgs e)
+        /// <summary>
+        /// DELETE
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventManage"></param>
+        private async void OnDeleteCardClicked(object sender, EventArgs eventManage)
         {
             Button? button = sender as Button;
             Card? card = button?.CommandParameter as Card;
@@ -123,8 +154,12 @@ namespace c335_fil_rouge_CamilleRais
             await SaveAsync();
         }
 
-        // UPDATE
-        private async void OnEditCardClicked(object sender, EventArgs e)
+        /// <summary>
+        /// UPDATE
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventManage"></param>
+        private async void OnEditCardClicked(object sender, EventArgs eventManage)
         {
             Button? button = sender as Button;
             Card? card = button?.CommandParameter as Card;
@@ -168,7 +203,10 @@ namespace c335_fil_rouge_CamilleRais
             _cards.Insert(index, card);
         }
 
-        // sauvegarde tout dans le JSON
+        /// <summary>
+        /// sauvegarde tout dans le JSON
+        /// </summary>
+        /// <returns></returns>
         private async Task SaveAsync()
         {
             if (_decks != null)

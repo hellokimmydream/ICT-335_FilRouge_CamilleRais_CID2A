@@ -1,3 +1,19 @@
+/******************************************************************************
+** PROGRAMME  SettingsPage.xaml.cs                                           **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Page des paramètres de l'app.                                             **
+**                                                                           **
+******************************************************************************/
+
 namespace c335_fil_rouge_CamilleRais
 {
     public partial class SettingsPage : ContentPage
@@ -7,12 +23,22 @@ namespace c335_fil_rouge_CamilleRais
             InitializeComponent();
         }
 
-        private async void OnSauvegarderClicked(object sender, EventArgs e)
+        /// <summary>
+        /// sauvegarde et retour
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventClick"></param>
+        private async void OnSauvegarderClicked(object sender, EventArgs eventClick)
         {
             await Shell.Current.GoToAsync("..");
         }
 
-        private async void OnAnnulerClicked(object sender, EventArgs e)
+        /// <summary>
+        /// annule et retour
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventClick"></param>
+        private async void OnAnnulerClicked(object sender, EventArgs eventClick)
         {
             await Shell.Current.GoToAsync("..");
         }

@@ -1,4 +1,23 @@
-﻿using System.Diagnostics;
+﻿/******************************************************************************
+** PROGRAMME  StudyPage.xaml.cs                                              **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Mode d'apprentissage avec secousse du téléphone.                          **
+** Les cartes passent en aléatoire. L'user clique Je connais ou              **
+** secoue le tel si la carte n'est pas connue.                               **
+** À la fin on va sur la page de résumé avec les stats.                      **
+**                                                                           **
+******************************************************************************/
+
+using System.Diagnostics;
 using c335_fil_rouge_CamilleRais.Models;
 // using pour utiliser les capteurs
 using Microsoft.Maui.Devices.Sensors;
@@ -36,7 +55,10 @@ namespace c335_fil_rouge_CamilleRais
             InitializeComponent();
         }
 
-        // récupère le deck passé via la nav Shell
+        /// <summary>
+        /// récupère le deck passé via la nav Shell
+        /// </summary>
+        /// <param name="query"></param>
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
             if (query.TryGetValue("deck", out object? deckObj) && deckObj is Deck deckParam)
@@ -47,8 +69,10 @@ namespace c335_fil_rouge_CamilleRais
             }
         }
 
-        // accelerometre
-        // active le capteur QUE quand on arrive sur la page et coupe quand on quitte
+        /// <summary>
+        /// accelerometre
+        /// active le capteur QUE quand on arrive sur la page et coupe quand on quitte
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -65,6 +89,9 @@ namespace c335_fil_rouge_CamilleRais
             }
         }
 
+        /// <summary>
+        /// quand on quitte la page, coupe le capteur et le chrono
+        /// </summary>
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
@@ -82,8 +109,12 @@ namespace c335_fil_rouge_CamilleRais
                 sessionStopwatch.Stop();
         }
 
-        // observateur appelé par MAUI quand secousse est détectée
-        private void AccelerometerShakeDetected(object? sender, EventArgs e)
+        /// <summary>
+        /// observateur appelé par MAUI quand secousse est détectée
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventStudy"></param>
+        private void AccelerometerShakeDetected(object? sender, EventArgs eventStudy)
         {
             // l'événement arrive sur un thread secondaire alors bascule sur le thread ui
             MainThread.BeginInvokeOnMainThread(() =>
@@ -95,8 +126,10 @@ namespace c335_fil_rouge_CamilleRais
             });
         }
 
-        // logique pour la révision comme dans CDC
-        // prépare une nouvelle session : mélange les cartes et démarre le chrono
+        /// <summary>
+        /// logique pour la révision comme dans CDC
+        /// prépare une nouvelle session : mélange les cartes et démarre le chrono
+        /// </summary>
         private void StartSession()
         {
             if (deck == null || deck.Cards.Count == 0)
@@ -118,7 +151,7 @@ namespace c335_fil_rouge_CamilleRais
             ShowNextCard();
         }
 
-        // tire la carte du dessus du deck et l'affiche
+        /// tire la carte du dessus du deck et l'affiche
         private void ShowNextCard()
         {
             if (remaining.Count == 0)
@@ -145,6 +178,9 @@ namespace c335_fil_rouge_CamilleRais
             UpdateProgressLabel();
         }
 
+        /// <summary>
+        /// met à jour le compteur Restantes / Connues
+        /// </summary>
         private void UpdateProgressLabel()
         {
             // nombre de cartes connues à 100% = cartes vues sans aucune erreur
@@ -161,7 +197,9 @@ namespace c335_fil_rouge_CamilleRais
             ShowNextCard();
         }
 
-        // l'utilisateur secoue le téléphone → carte non connue
+        /// <summary>
+        /// l'utilisateur secoue le téléphone → carte non connue
+        /// </summary>
         private void MarkCurrentCardAsUnknown()
         {
             if (currentCard == null) return;
@@ -188,8 +226,12 @@ namespace c335_fil_rouge_CamilleRais
             ShowNextCard();
         }
 
-        // bouton stop : on quitte et on va au résumé
-        private async void OnStopClicked(object sender, EventArgs e)
+        /// <summary>
+        /// bouton stop : on quitte et on va au résumé
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventStudy"></param>
+        private async void OnStopClicked(object sender, EventArgs eventStudy)
         {
             // si l'utilisateur n'a vu aucune carte, juste retour arrière
             if (seenCardIds.Count == 0)
@@ -201,7 +243,9 @@ namespace c335_fil_rouge_CamilleRais
             EndSession();
         }
 
-        // fin de la session : on calcule les stats et on navigue vers le résumé
+        /// <summary>
+        /// fin de la session : on calcule les stats et on navigue vers le résumé
+        /// </summary>
         private async void EndSession()
         {
             sessionStopwatch.Stop();
@@ -243,8 +287,12 @@ namespace c335_fil_rouge_CamilleRais
             await Shell.Current.GoToAsync("studySummary", navigationParameter);
         }
 
-        // flip
-        private void OnFlipTapped(object sender, TappedEventArgs e)
+        /// <summary>
+        /// flip
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventStudy"></param>
+        private void OnFlipTapped(object sender, TappedEventArgs eventStudy)
         {
             if (currentCard == null) return;
 

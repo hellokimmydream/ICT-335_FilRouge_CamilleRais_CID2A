@@ -1,7 +1,28 @@
-﻿using c335_fil_rouge_CamilleRais.Models;
+﻿/******************************************************************************
+** PROGRAMME  DetailPage.xaml.cs                                             **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Page qui affiche les cartes d'un deck une par une.                        **
+** On peut taper sur la carte pour voir la réponse (flip).                   **
+** Boutons précédent / suivant pour passer d'une carte à l'autre.            **
+**                                                                           **
+******************************************************************************/
+
+using c335_fil_rouge_CamilleRais.Models;
 
 namespace c335_fil_rouge_CamilleRais
 {
+    /// <summary>
+    /// page qui affiche les cartes d'un deck
+    /// </summary>
     public partial class DetailPage : ContentPage, IQueryAttributable
     {
         // deck sur lequel on est
@@ -18,7 +39,10 @@ namespace c335_fil_rouge_CamilleRais
             InitializeComponent();
         }
 
-        // recoit deck depuis Decks.xaml ou Accueil.xaml
+        /// <summary>
+        /// recoit deck depuis Decks.xaml ou Accueil.xaml
+        /// </summary>
+        /// <param name="query"></param>
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
             if (query.TryGetValue("deck", out object? deckObj) && deckObj is Deck deck)
@@ -31,7 +55,9 @@ namespace c335_fil_rouge_CamilleRais
             }
         }
 
-        // affiche toujours la carte sur la face question
+        /// <summary>
+        /// affiche toujours la carte sur la face question
+        /// </summary>
         private void ShowCurrentCard()
         {
             // si pas de cartes affiche un message vide
@@ -63,7 +89,11 @@ namespace c335_fil_rouge_CamilleRais
             BackFace.IsVisible = false;
         }
 
-        // FLIP tapez sur la carte pour voir l autre coté avec la réponse 
+        /// <summary>
+        /// FLIP tapez sur la carte pour voir l autre coté avec la réponse 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="evenementFlip"></param>
         private void OnFlipTapped(object sender, TappedEventArgs evenementFlip)
         {
             if (_deck == null || _deck.Cards.Count == 0) return;
@@ -73,7 +103,11 @@ namespace c335_fil_rouge_CamilleRais
             BackFace.IsVisible = _isFlipped;
         }
 
-        // btn précédent
+        /// <summary>
+        /// btn précédent
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="evenementFlip"></param>
         private void OnPreviousClicked(object sender, EventArgs evenementFlip)
         {
             if (_deck == null || _deck.Cards.Count == 0) return;
@@ -83,7 +117,11 @@ namespace c335_fil_rouge_CamilleRais
             ShowCurrentCard();
         }
 
-        // btn suivant
+        /// <summary>
+        /// btn suivant
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="evenementFlip"></param>
         private void OnNextClicked(object sender, EventArgs evenementFlip)
         {
             if (_deck == null || _deck.Cards.Count == 0) return;

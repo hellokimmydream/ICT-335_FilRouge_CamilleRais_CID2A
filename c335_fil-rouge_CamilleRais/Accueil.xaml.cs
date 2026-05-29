@@ -1,4 +1,22 @@
-﻿using c335_fil_rouge_CamilleRais.Models;
+﻿/******************************************************************************
+** PROGRAMME  Accueil.xaml.cs                                                **
+**                                                                           **
+** Lieu      : ETML - section informatique                                   **
+** Auteur    : Camille Rais                                                  **
+** Date      : 18.03.2026                                                    **
+**                                                                           **
+******************************************************************************/
+
+/******************************************************************************
+** DESCRIPTION                                                               **
+**                                                                           **
+** Page d'accueil de l'app FlashQuizz.                                       **
+** Affiche la liste des decks et permet d'en créer un nouveau.               **
+** Au tap sur un deck on va sur la page de détail.                           **
+**                                                                           **
+******************************************************************************/
+
+using c335_fil_rouge_CamilleRais.Models;
 using c335_fil_rouge_CamilleRais.Services;
 using System.Collections.ObjectModel;
 
@@ -10,6 +28,9 @@ namespace c335_fil_rouge_CamilleRais
         private ObservableCollection<Deck> _decks;
         private int _nextId = 1;
 
+        /// <summary>
+        /// constructeur de la page d'accueil
+        /// </summary>
         public Accueil()
         {
             InitializeComponent();
@@ -18,13 +39,17 @@ namespace c335_fil_rouge_CamilleRais
             DecksCollectionView.ItemsSource = _decks;
         }
 
-        // Recharge la liste à chaque retour sur la page
+        /// <summary>
+        /// Recharge la liste à chaque retour sur la page
+        /// </summary>
         protected override void OnAppearing()
         {
             base.OnAppearing();
             LoadDecks();
         }
-
+        /// <summary>
+        /// charge la liste des decks depuis le JSON
+        /// </summary>
         private async void LoadDecks()
         {
             List<Deck> loadedDecks = await _dataService.LoadDecksAsync();
@@ -45,7 +70,11 @@ namespace c335_fil_rouge_CamilleRais
             }
         }
 
-        // tap sur un deck = ouvre direct la page etudier
+        /// <summary>
+        /// tap sur un deck = ouvre direct la page etudier
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventTap"></param>
         private async void OnDeckTapped(object sender, TappedEventArgs eventTap)
         {
             Deck? deck = eventTap.Parameter as Deck;
@@ -60,8 +89,12 @@ namespace c335_fil_rouge_CamilleRais
             await Shell.Current.GoToAsync("detail", navigationParameter);
         }
 
-        // CREATE rapide depuis entry
-        private async void OnAddDeckClicked(object sender, EventArgs e)
+        /// <summary>
+        /// CREATE rapide depuis entry
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventTap"></param>
+        private async void OnAddDeckClicked(object sender, EventArgs eventTap)
         {
             string? name = NewDeckEntry.Text?.Trim();
 
